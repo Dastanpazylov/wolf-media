@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-and-menu-navbar">
+            <div class="hamburger" id="openModal">
+                <img src="images/header/hamburger.svg" alt="">
+            </div>
+            <a class="logotip" href="/">
+                <img src="images/header/logo.svg" alt="">
+            </a>
+            <nav class="navbar">
+                <ul class="">
+                    <li><a class="menu-link" href="/">о нас</a></li>
+                    <li><a class="menu-link" href="/">Портфолио</a></li>
+                    <li><a class="menu-link" href="/">Услуги</a></li>
+                    <li><a class="menu-link" href="/">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+
+        </div>
+       <div class="socials-numberphone-button">
+        <div class="socials-logos">
+            <a href="/"><img src="images/header/vk.svg" alt=""></a>
+            <a href="/"><img src="images/header/odnoklassniki-logo.svg" alt=""></a>
+            <a href="/"><img src="images/header/facebook.svg" alt=""></a>
+            <a href="/"><img src="images/header/twitter.svg" alt=""></a>
+        </div>
+        <div class="phone-number">
+            <img src="images/header/phone-call.svg" alt="">
+            <a href="/"><span>+7 495 257 55 65</span></a>
+        </div>
+        <button class="btn">написать нам</button>
+        <div class="letter">
+                <img class="mail" src="images/header/mail.svg" alt="">
+        </div>
+       </div>
+    </header>
+    <ul class="sidebar modal" id="myModal">
+        <span class="close"><img src="images/header/closeham.svg" alt=""></span>
+        <div class="sideba-menus">
+            <li><a class="menu-link-sidebar" href="/">о нас</a></li>
+        <li><a class="menu-link-sidebar" href="/">Портфолио</a></li>
+        <li><a class="menu-link-sidebar" href="/">Услуги</a></li>
+        <li><a class="menu-link-sidebar" href="/">Контакты</a></li>
+        </div>
+        <div class="sidebar-number-btn">
+            <div class="sidebarlogo-number">
+                <img src="images/header/phone-call.svg" alt="">
+                <a href="/"><span>+7 495 257 55 65</span></a>
+            </div>
+            <button class="buttonsidebar">написать нам</button>
+        </div>
+    </ul>
+    <main></main>
+    <script>
+             const modal = document.getElementById("myModal");
+        const btn = document.getElementById("openModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == sidebar) {
+                sidebar.style.display = "block";
+            }
+        }
+
+    </script>    
+
+    <section class="hero-container">
+        <div class="hero-content">
+           
+            <h1 class="hero-title">Издательство <br> новых медиа</h1>
+            <div class="hero-cards">
+                <div class="hero-card">
+                    <span>100 000 000</span>
+                    <h5>наша аудитория</h5>
+                </div>
+                <div class="hero-card">
+                    <span>12 000 000</span>
+                    <h5>ежедневно нас читают</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="aboutus">
+        <div class="aboutus-container">
+            <div class="aboutus-texts-btn">
+                <h1 class="aboutus-texts-btn-title">О НАС</h1>
+                <div class="aboutus-texts-btn-text">
+                    <p class="aboutus-text-first">
+                        «Wolfmedia» – это редакция, где ежедневно авторы, иллюстраторы, <br> дизайнеры, видеографы, создают уникальный контент и доносят его до <br> огромной аудитории с помощью социальных сетей.
+                    </p>
+                    <p class="aboutus-text-second">
+                        Социальные сети стали главным инструменом коммуникации в 21 веке. <br> Сообщества, паблики,
+youtube-каналы, блоги получают внимание <br> миллионной аудитории, зачастую их охват превышает
+охват популярных <br> телеканалов и журналов. 
+                    </p>
+                    <p class="aboutus-text-third">
+                        И пока традиционные СМИ занимаются перетаскивание аудитории с <br> одной площадки на
+другую, мы идем прямо к читателю, в его <br> новостную
+ленту. 
+                    </p>
+                </div>
+                <button class="aboutus-texts-btn-btn">ПОДРОБНЕЕ</button>
+            </div>
+            <div class="achievement">
+                <div class="years">
+                    <span class="years-element"><h5>2014</h5></span>
+                    <span class="years-element"><h5>2015</h5></span>
+                    <span class="years-element"><h5>2016</h5></span>
+                    <span class="years-element"><h5>2017</h5></span>
+                    <span class="years-element-eight"><h5>2018</h5></span>
+                    <span class="years-element-nine"><h5>2019/'</h5></span>
+                </div>
+                <div class="dots">
+                    <div class="dots-line"></div>
+                    <div class="dots-col">
+                    <img class="img-dots" src="images/aboutus/dots.svg" alt="">
+                    <img class="img-dots" src="images/aboutus/dots.svg" alt="">
+                    <img class="img-dots" src="images/aboutus/dots.svg" alt="">
+                    <img class="img-dots" src="images/aboutus/dots.svg" alt="">
+                    <img class="img-dots-first" src="images/aboutus/dots.svg" alt="">
+                    <img class="img-dots-second" src="images/aboutus/dots.svg" alt="">
+                    </div>
+                </div>
+                <div class="message-text">
+                    <div class="message-card">
+                        <p>С 1 паблика выросли до сетки из 50 сообществ</p>
+                    </div>
+                    <div class="message-card">
+                        <p>Первый миллион подписчиков</p>
+                    </div>
+                    <div class="message-card">
+                        <p>Активный рост сообществ и аудитории</p>
+                    </div>
+                    <div class="message-card-big">
+                        <p>Открытие собственного офиса, переход <br> 
+                            от виртуальной команды к реальной, <br>
+                            запуск видео-продакшена</p>
+                    </div>
+                    <div class="message-card-first">
+                        <p>Разработан собственный софт по <br> сбору детальной статистики</p>
+                    </div>
+                    <div class="message-card-second">
+                        <p>Агрегация сообществ под <br>
+                            управление WolfMedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="third-container">
+            <h1 class="third-title">Более 150 тематических сообществ</h1>
+            <div class="third-cards">
+                <div class="third-card">
+                    <div class="logo-span">
+                        <img src="images/third-section/chef.svg" alt="">
+                    <span>Кулинария</span>
+                    </div>
+                </div>
+                <div class="third-card">
+                   <div class="logo-span">
+                    <img src="images/third-section/laughing.svg" alt="">
+                    <span>Юмор</span>
+                   </div>
+                </div>
+                <div class="third-card">
+                   <div class="logo-span">
+                    <img src="images/third-section/paw-black-shape.svg" alt="">
+                    <span>Животные</span>
+                   </div>
+                </div>
+                <div class="third-card">
+                   <div class="logo-span">
+                    <img src="images/third-section/airplane-around-earth.svg" alt="">
+                    <span>Путешествия</span>
+                   </div>
+                </div>
+                <div class="third-card">
+                    <div class="logo-span">
+                        <img src="images/third-section/football (1).svg" alt="">
+                    <span>Спорт</span>
+                    </div>
+                </div>
+                <div class="third-card">
+                   <div class="logo-span">
+                    <img src="images/third-section/high-heel.svg" alt="">
+                    <span>Для женщин</span>
+                   </div>
+                </div>
+                <div class="third-card">
+                    <div class="logo-span">
+                        <img src="images/third-section/drawing.svg" alt="">
+                    <span>Дизайн</span>
+                    </div>
+                </div>
+                <div class="third-card">
+                    <div class="logo-span">
+                        <img src="images/third-section/brain.svg" alt="">
+                    <span>Познавательно</span>
+                    </div>
+                </div>
+                <div class="third-card">
+                   <div class="logo-span">
+                    <img src="images/third-section/baby-carriage.svg" alt="">
+                    <span>Материнство</span>
+                   </div>
+                </div>
+            </div>
+            <h1 class="thrid-title-mini">Присутствуем на всех популярных платформах</h1>
+        </div>
+    </section>
+    <section class="four-section">
+        <div class="four-container">
+            <h1 class="four-title">Как мы работаем</h1>
+            <div class="four-cards-image-slider">
+                <div class="four-cards">
+                    <div class="four-card"><p> <span class="four-orange">50 штатных 
+                        специалистов</span> по SMM</p>
+                    </div>
+                    <div class="four-card"><p> 
+                        Производят <span class="four-orange">контент</span> в
+    соответствии с <span class="four-orange">редполитикой</span></p>
+                    </div>
+                    <div class="four-card"><p> Ежедневно выпускают <span class="four-orange">2000
+                        постов и 162 видео</span></p>
+                    </div>
+    
+                    <div class="four-card"><p>Все материалы проходят внешнюю
+                        <span class="four-orange">проверку на уникальность</span></p>
+                    </div>
+                    <div class="four-card"><p>Собственный софт собирает
+                        <span class="four-orange">полную статистику</span> по активности
+                        сооществ и качеству контента</p>
+                    </div>
+                    <div class="four-card"><p>Арт-директор следит за
+                        соблюдением <span class="four-orange">стилистики группы</span></p>
+                    </div>
+                </div>
+                <div class="four-image-slider">
+                    <div class="four-image">
+                        <img src="images/four-section/four-image.png" alt="">
+                    </div>
+                    <div class="four-slider-cont">
+                        <div class="wrapper">
+                            <div class="carousel">
+                                <img src="images/four-section/slider1.png" alt="">
+                                <img src="images/four-section/slider2.png" alt="">
+                                <img src="images/four-section/slider3.png" alt="">
+                                <img src="images/four-section/slider4.png" alt="">
+                            </div>  
+                            <i id="right" class=""><img src="images/four-section/back.svg" alt=""></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+}
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+});
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+    </script>
+    <!-- <section class="five-section">
+        <div class="five-container">
+            <h1 class="five-title">Помогаем брендам наладить <br> 
+коммуникацию с аудиторией</h1>
+             <p class="five-text">Социальные сети - идеальная площадка для размещения нативной рекламы, она встраивается в ленту пользователя, вызывает большее доверие у <br> аудитории, обходит блокировщики рекламы, и органически набирает огромные охваты.</p>   
+             <div class="five-cards">
+                <div class="five-card">
+                    <div class="fivecard-logo">
+                        <img src="images/five-section/fivecard1.svg" alt="">
+                    </div>
+                    <div class="fivecard-title">
+                        <h1 class="cont-title">Создаем контент</h1>
+                    </div>
+                </div>
+                <div class="five-card">
+                    <div class="fivecard-logo">
+                        <img src="images/five-section/fivecard2.svg" alt="">
+                    </div>
+                    <div class="fivecard-title">
+                        <h1 class="advertising-title">Размещаем нативную рекламу</h1>
+                    </div>
+                </div>
+                <div class="five-card">
+                    <div class="fivecard-logo">
+                        <img src="images/five-section/fivecard3.svg" alt="">
+                    </div>
+                    <div class="fivecard-title">
+                        <h1 class="specialproject-title">Разрабатываем нативные спецпроекты</h1>
+                    </div>
+                </div>
+             </div>
+             <div class="five-cont-btn">
+                <button class="five-btn">Рекламное сотрудничество</button>
+             </div>
+        </div>
+    </section> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
